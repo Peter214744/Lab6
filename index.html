@@ -1,0 +1,55 @@
+<html>
+<head>
+<title> Lab 6</title>
+<script src="scripts/processing.js"></script>
+<script type="text/processing" data-processing-target="mycanvas">
+
+void setup()
+{
+
+	size(300,300);
+	frameRate( 30 );
+
+}
+
+
+void draw()
+{
+
+	background(0,0,0);
+	fill(255,255,255);
+	
+	rect(100,100,99,99);
+	
+	text(mouseX,10,10);
+	text(mouseY,10,20);
+	
+	textSize(50);
+	text("Index",86,70);
+	
+	textSize(20);
+	fill(255,0,0);
+	text("To Lab6a",109,158);
+	
+	
+	//Lab6a
+	if (mousePressed == true && mouseButton ==LEFT)
+	{
+		if (mouseX > 100 && mouseX < 199 &&
+			mouseY > 100 && mouseY <199 )
+		{
+			link(" Lab6a.html");
+		
+		}
+	
+	}
+}
+
+</script>
+<canvas id="mycanvas"></canvas>
+</head>
+
+<body>
+
+</body>
+</html>
